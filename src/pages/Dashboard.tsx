@@ -117,15 +117,15 @@ const Dashboard = () => {
             <div>
               <h3 className="text-xl font-bold text-foreground flex items-center gap-2">
                 <Award className="h-5 w-5 text-portal-gold" />
-                Mid Exam Results – Semester Report
+                Semester Report
               </h3>
               <p className="text-sm text-muted-foreground mt-1">
                 First Semester 2024/2025 • Computer Science Department
               </p>
             </div>
-            <div className="hidden sm:block bg-portal-pending/20 px-3 py-1 rounded-full">
-              <span className="text-xs font-medium text-portal-pending">
-                Partial Results
+            <div className="hidden sm:block bg-primary/10 px-3 py-1 rounded-full">
+              <span className="text-xs font-medium text-primary">
+                Academic Results
               </span>
             </div>
           </div>
