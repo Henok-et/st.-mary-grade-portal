@@ -17,7 +17,7 @@ const Dashboard = () => {
     college: "College of Natural and Computational Sciences",
     university: "St. Mary University",
     studentId: "SMU/2024/CS/0847",
-    enrollmentYear: "2024",
+    enrollmentYear: "2025",
     semester: "First Semester",
     academicYear: "2025/2026"
   };
