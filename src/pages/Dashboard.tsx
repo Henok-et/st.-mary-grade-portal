@@ -19,7 +19,7 @@ const Dashboard = () => {
     studentId: "SMU/2024/CS/0847",
     enrollmentYear: "2024",
     semester: "First Semester",
-    academicYear: "2024/2025"
+    academicYear: "2025/2026"
   };
   return <div className="min-h-screen bg-background flex flex-col">
       {/* Header */}
