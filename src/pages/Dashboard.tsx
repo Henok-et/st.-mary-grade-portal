@@ -5,14 +5,11 @@ import { LogOut, User, BookOpen, Calendar, Award } from "lucide-react";
 import universityLogo from "@/assets/university-logo.png";
 import studentPhoto from "@/assets/student-photo.png";
 import ResultsTable from "@/components/ResultsTable";
-
 const Dashboard = () => {
   const navigate = useNavigate();
-
   const handleLogout = () => {
     navigate("/");
   };
-
   const studentInfo = {
     name: "Kebron Dereje Tesfaye",
     department: "Computer Science",
@@ -22,21 +19,15 @@ const Dashboard = () => {
     studentId: "SMU/2024/CS/0847",
     enrollmentYear: "2024",
     semester: "First Semester",
-    academicYear: "2024/2025",
+    academicYear: "2024/2025"
   };
-
-  return (
-    <div className="min-h-screen bg-background flex flex-col">
+  return <div className="min-h-screen bg-background flex flex-col">
       {/* Header */}
       <header className="bg-primary shadow-lg sticky top-0 z-50">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between py-3">
             <div className="flex items-center gap-4">
-              <img
-                src={universityLogo}
-                alt="St. Mary University Logo"
-                className="h-12 w-12 rounded-full bg-white p-1"
-              />
+              <img alt="St. Mary University Logo" className="h-12 w-12 rounded-full bg-white p-1" src="/lovable-uploads/c7ce1d53-8840-405f-8f45-4d13aa6f1182.jpg" />
               <div>
                 <h1 className="text-primary-foreground text-lg font-bold">
                   St. Mary University
@@ -55,12 +46,7 @@ const Dashboard = () => {
                   Last login: Jan 11, 2025
                 </p>
               </div>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={handleLogout}
-                className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10"
-              >
+              <Button variant="outline" size="sm" onClick={handleLogout} className="bg-transparent border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10">
                 <LogOut className="h-4 w-4 mr-2" />
                 Logout
               </Button>
@@ -89,11 +75,7 @@ const Dashboard = () => {
               {/* Student Photo */}
               <div className="flex-shrink-0">
                 <div className="w-32 h-32 rounded-lg overflow-hidden border-4 border-primary/20 shadow-lg mx-auto md:mx-0">
-                  <img
-                    src={studentPhoto}
-                    alt="Student Photo"
-                    className="w-full h-full object-cover"
-                  />
+                  <img src={studentPhoto} alt="Student Photo" className="w-full h-full object-cover" />
                 </div>
               </div>
 
@@ -128,7 +110,9 @@ const Dashboard = () => {
         </Card>
 
         {/* Results Section */}
-        <div className="animate-fade-in" style={{ animationDelay: "0.1s" }}>
+        <div className="animate-fade-in" style={{
+        animationDelay: "0.1s"
+      }}>
           <div className="flex items-center justify-between mb-4">
             <div>
               <h3 className="text-xl font-bold text-foreground flex items-center gap-2">
@@ -173,36 +157,28 @@ const Dashboard = () => {
           </p>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 const NavItem = ({
   icon: Icon,
   label,
-  active = false,
+  active = false
 }: {
   icon: React.ElementType;
   label: string;
   active?: boolean;
-}) => (
-  <button
-    className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium transition-colors ${
-      active
-        ? "bg-primary-foreground/15 text-primary-foreground"
-        : "text-primary-foreground/70 hover:text-primary-foreground hover:bg-primary-foreground/10"
-    }`}
-  >
+}) => <button className={`flex items-center gap-2 px-4 py-2 rounded-md text-sm font-medium transition-colors ${active ? "bg-primary-foreground/15 text-primary-foreground" : "text-primary-foreground/70 hover:text-primary-foreground hover:bg-primary-foreground/10"}`}>
     <Icon className="h-4 w-4" />
     {label}
-  </button>
-);
-
-const InfoItem = ({ label, value }: { label: string; value: string }) => (
-  <div>
+  </button>;
+const InfoItem = ({
+  label,
+  value
+}: {
+  label: string;
+  value: string;
+}) => <div>
     <p className="text-xs text-muted-foreground uppercase tracking-wide">{label}</p>
     <p className="text-sm font-medium text-foreground mt-0.5">{value}</p>
-  </div>
-);
-
+  </div>;
 export default Dashboard;
