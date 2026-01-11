@@ -75,7 +75,7 @@ const Dashboard = () => {
               {/* Student Photo */}
               <div className="flex-shrink-0">
                 <div className="w-32 h-32 rounded-lg overflow-hidden border-4 border-primary/20 shadow-lg mx-auto md:mx-0">
-                  <img src={studentPhoto} alt="Student Photo" className="w-full h-full object-cover" />
+                  <img alt="Student Photo" className="w-full h-full object-cover" src="/lovable-uploads/cb042de1-d47c-4548-a67e-7c7aae6c4c0e.jpg" />
                 </div>
               </div>
 
