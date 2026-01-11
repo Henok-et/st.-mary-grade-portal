@@ -113,7 +113,7 @@ const Dashboard = () => {
         <div className="animate-fade-in" style={{
         animationDelay: "0.1s"
       }}>
-          <div className="flex items-center justify-between mb-4">
+          <div className="flex items-center justify-between mb-4 text-secondary-foreground">
             <div>
               <h3 className="text-xl font-bold text-foreground flex items-center gap-2">
                 <Award className="h-5 w-5 text-portal-gold" />
